@@ -5,6 +5,7 @@
 
 
 ###  1 去darkent 官网，  https://pjreddie.com/darknet/yolo/ following the above to parpare the voc2007+ 2012  
+
    wget https://pjreddie.com/media/files/VOCtrainval_11-May-2012.tar
    wget https://pjreddie.com/media/files/VOCtrainval_06-Nov-2007.tar
    wget https://pjreddie.com/media/files/VOCtest_06-Nov-2007.tar
@@ -14,7 +15,7 @@
    
  解压后产生一个 VOCdevkit文件夹， 其中包含VOC2007， VOC2012两部分；
  
-  之后运行 1-voc_labels.py文件，该文件的作用：
+1-voc_labels.py文件，该文件的作用：
             a: 在VOC2007，VOC2012中各自创建labels文件夹，并生成每张图片所对应的标签.txt ，voc格式的labels文件； 
             b: 读取了VOC2007， VOC2012 这两个文件夹中各自的ImageSets/Main/... , train.txt, val.txt,test.txt;
             c: 在labels文件夹中创建,年份+xxx.txt ,工记五个.txt文件，并将 b中读取的内容写入 这五个.txt文件中，
@@ -23,7 +24,7 @@
              2007_val.txt    
              2012_train.txt  
              2012_val.txt
-cat 2007_train.txt 2007_val.txt 2012_*.txt > train.txt ，  将这四个部分合并为一个训练集，  2007_test作为测试集；
+       cat 2007_train.txt 2007_val.txt 2012_*.txt > train.txt ，  将这四个部分合并为一个训练集，  2007_test作为测试集；
 
 
 2-make_floderAndCopy.py 该文件的作用：

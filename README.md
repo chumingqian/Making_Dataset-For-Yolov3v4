@@ -35,5 +35,5 @@
       4 新建 VOC/labels/val,   将  VOC2012/labels 中  txt 的拷贝进去；
       
       
-3 - make_final-imageTxt.py
+3-final-imageTxt.py
       根据 VOC/images  路径，重新生成新的最终的tain.txt, val.txt ， 这两个文件中所包含的图片路径，为后来新建的文件的图片路径；

@@ -24,7 +24,8 @@
              2007_val.txt    
              2012_train.txt  
              2012_val.txt
-       cat 2007_train.txt 2007_val.txt 2012_*.txt > train.txt ，  将这四个部分合并为一个训练集，  2007_test作为测试集；
+             
+2-0: 将1中生成的文件合并： cat 2007_train.txt 2007_val.txt 2012_*.txt > train.txt ，  将这四个部分合并为一个训练集，  2007_test作为测试集；
 
 
 2-make_floderAndCopy.py 该文件的作用：

@@ -4,7 +4,9 @@
 ###   实现结果voc2007 + voc2012  两个数据集合并成一个，  最终16551张作为训练集， 2007_test,4952张图片作为测试集； 
 
 
-###  1 去darkent 官网，  https://pjreddie.com/darknet/yolo/ following the above to parpare the voc2007+ 2012  
+###  1 去darkent 官网
+
+   https://pjreddie.com/darknet/yolo/ following the above to parpare the voc2007+ 2012  
 
    wget https://pjreddie.com/media/files/VOCtrainval_11-May-2012.tar
    wget https://pjreddie.com/media/files/VOCtrainval_06-Nov-2007.tar
@@ -13,12 +15,13 @@
    tar xf VOCtrainval_06-Nov-2007.tar
    tar xf VOCtest_06-Nov-2007.tar
    
- 解压后产生一个 VOCdevkit文件夹， 其中包含VOC2007， VOC2012两部分；
+### 解压后产生一个 VOCdevkit文件夹， 其中包含VOC2007， VOC2012两部分；
  
 1-voc_labels.py文件，该文件的作用：
             a: 在VOC2007，VOC2012中各自创建labels文件夹，并生成每张图片所对应的标签.txt ，voc格式的labels文件； 
             b: 读取了VOC2007， VOC2012 这两个文件夹中各自的ImageSets/Main/... , train.txt, val.txt,test.txt;
             c: 在labels文件夹中创建,年份+xxx.txt ,工记五个.txt文件，并将 b中读取的内容写入 这五个.txt文件中，
+             
              2007_test.txt 
              2007_train.txt  
              2007_val.txt    
@@ -29,11 +32,13 @@
 
 
 2-make_floderAndCopy.py 该文件的作用：
+
       1 新建 VOC/images/train, 将 train.txt 中的 .jpg图片拷贝进去；
-      2 新建 VOC/images/val ,  将  test.txt 中的 .jpg 图片拷贝进去；
+      2 新建 VOC/images/val ,  将  2007_test.txt 中的 .jpg 图片拷贝进去；
       3 新建 VOC/labels/train, 将  VOC2007/labels 中  txt 拷贝进去；
       4 新建 VOC/labels/val,   将  VOC2012/labels 中  txt 的拷贝进去；
       
       
 3-final-imageTxt.py
+
       根据 VOC/images  路径，重新生成新的最终的tain.txt, val.txt ， 这两个文件中所包含的图片路径，为后来新建的文件的图片路径；

@@ -45,4 +45,4 @@
       
 3-final-imageTxt.py
 
-      根据 VOC/images  路径，重新生成新的最终的tain.txt, val.txt ， 这两个文件中所包含的图片路径，为后来新建的文件的图片路径；
+      根据 VOC/images  路径，重新生成新的最终的0712_tain.txt, 0712_val.txt ， 这两个文件中所包含的图片路径，为后来新建的文件的图片路径；

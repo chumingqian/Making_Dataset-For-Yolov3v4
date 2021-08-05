@@ -21,10 +21,10 @@
    
 ### 解压后产生一个 VOCdevkit文件夹， 其中包含VOC2007， VOC2012两部分；
  
-1-voc_labels.py文件，该文件的作用：
-            a: 在VOC2007，VOC2012中各自创建labels文件夹，并生成每张图片所对应的标签.txt ，voc格式的labels文件； 
-            b: 读取了VOC2007， VOC2012 这两个文件夹中各自的ImageSets/Main/... , train.txt, val.txt,test.txt;
-            c: 在labels文件夹中创建,年份+xxx.txt ,工记五个.txt文件，并将 b中读取的内容写入 这五个.txt文件中，
+1-voc_labels.py，
+  该文件的作用：a: 在VOC2007，VOC2012中分别创建labels文件夹，并将每张图片的bbox格式由VOC转换成yolo格式，并将其写入到对应的image_id.txt文档中； 
+             b: 读取了VOC2007， VOC2012 这两个文件夹中各自的ImageSets/Main/... , train.txt, val.txt,test.txt;
+             c: 在labels文件夹中创建,年份+xxx.txt ,工记五个.txt文件，并将 b中读取的内容写入 这五个.txt文件中，
              
              2007_test.txt 
              2007_train.txt  

@@ -23,8 +23,8 @@
  
 1-voc_labels.py，
   该文件的作用：a: 在VOC2007，VOC2012中分别创建labels文件夹，并将每张图片的bbox格式由VOC转换成yolo格式，并将其写入到对应的image_id.txt文档中； 
-             b: 读取了VOC2007， VOC2012 这两个文件夹中各自的ImageSets/Main/... , train.txt, val.txt,test.txt;
-             c: 在labels文件夹中创建,年份+xxx.txt ,工记五个.txt文件，并将 b中读取的内容写入 这五个.txt文件中，
+            b: 读取了VOC2007， VOC2012 这两个文件夹中各自的ImageSets/Main/，中的train.txt, val.txt,test.txt,共五个.txt文件，这其每个txt中包含了对应的jpg图片的名称;
+            c: 在labels文件夹中创建,年份+xxx.txt 总共五个.txt文件，并将b步骤中读取的图片名称 + 当前图片的路径内容写入 这五个.txt文件中，
              
              2007_test.txt 
              2007_train.txt  
@@ -32,7 +32,7 @@
              2012_train.txt  
              2012_val.txt
              
-2-0: 将1中生成的文件合并： cat 2007_train.txt 2007_val.txt 2012_*.txt > train.txt ，  将这四个部分合并为一个训练集，  2007_test作为测试集；
+2-0: 将1中生成的文件合并： cat 2007_train.txt 2007_val.txt 2012_*.txt > train.txt ，  将这四个部分合并为一个训练集train.txt，  2007_test作为测试集；
 
 
 2-make_floderAndCopy.py 该文件的作用：

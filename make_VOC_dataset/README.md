@@ -1,4 +1,4 @@
-# dataset-for-Ultray-yolov3v4
+# VOC_dataset-for-Ultray-yolov3v4
 
 ###   该脚本修改后，只产生训练和验证集两个部分。 
 ###   实现结果voc2007 + voc2012  两个数据集合并成一个，  最终16551张作为训练集， 2007_test,4952张图片作为测试集； 

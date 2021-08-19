@@ -4,6 +4,24 @@
 
 ###   1. make_COCO_dataset : this  three  python  files  realized the function of  convert the label from the .json  format  to the  .txt  format, so that we can train the  YOLO with the .txt  format  label.
 
+- if we make it  out, the VOC dataset in the data folder should  be the following hierarchy
+
+```
+├── data
+│   ├── VOC         for  VOC dataset
+│   |     ├── images
+|   |     |        ├── train
+|   |     |        ├── val
+|   |     ├── labels
+|   |     |        ├── train
+|   |     |        ├── val
+|
+```
+
+
+
+
+
 - For the  COCO  dataset and pretrained weights,
 Download the following address, download and unzip the folder to copy to the data directory can be used.
 
@@ -29,5 +47,18 @@ Download the following address, download and unzip the folder to copy to the dat
 
 ### 2. make_VOC_dataset : this  three  python  files  realized  the function of  convert the label  from the .xml  format  to the .txt  format, so that we can train the  YOLO with the .txt  format  label.
 
+- if we make it out, the COCO dataset in the data folder should  be the following hierarchy
+
+```            
+├── data
+│   ├── COCO         for  COCO dataset
+│   |     ├── images
+|   |     |        ├── train
+|   |     |        ├── val
+|   |     ├── labels
+|   |     |        ├── train
+|   |     |        ├── val
+|
+```
 
 

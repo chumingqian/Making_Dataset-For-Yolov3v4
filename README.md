@@ -1,17 +1,20 @@
-# Make_Dataset-for-Ultralytics-yolov3v4
+# Make_Dataset-for-Ultralytics-yolov3v4,   make the dataset for  this repository  https://github.com/ultralytics/yolov3 .
 
-### This  repository mainly include  two parts:
-- 1.make_COCO_dataset 
+## This repository mainly include  two parts:
+- Part I:  make_COCO_dataset and test on the  test-dev2017 
 
-- 2.make_VOC_dataset
+- Part II: make_VOC_dataset
 
-###   1. make_COCO_dataset : this  three  python  files  realized the function of  convert the label from the .json  format  to the  .txt  format, so that we can train the  YOLO with the .txt  format  label.
 
-- if we make it  out, the VOC dataset in the data folder should  be the following hierarchy
+## Part I: 
+1.1 make_COCO_dataset:  
+This  three  python  files realized the function of convert the label from the " .json"  format  to the ".txt"  format, so that we can train the  YOLO network  with the .txt  format  label.
 
-```
+-If we make it out,  the COCO dataset in the data folder should  be the following hierarchy.
+
+```            
 ├── data
-│   ├── VOC         for  VOC dataset
+│   ├── COCO      For  COCO dataset folder 
 │   |     ├── images
 |   |     |        ├── train
 |   |     |        ├── val
@@ -21,11 +24,12 @@
 |
 ```
 
+1.2 If you want test your model  without the ground truth label, and  submit the reuslts.json   (which test about 21k images)  to the CodaLab   https://competitions.codalab.org/competitions/20794 ,  here have a  simple tutorials: ./make_COCO_dataset/readme_test-dev2017.md 
 
 
 
 
-- For the  COCO  dataset and pretrained weights,
+- For the  COCO  dataset and yolov4 pretrained weights:
 Download the following address, download and unzip the folder to copy to the data directory can be used.
 
 - [COCO2017](https://pan.baidu.com/s/1KysFL6AmdbCBq4tHDebqlw)
@@ -48,13 +52,14 @@ Download the following address, download and unzip the folder to copy to the dat
 
 
 
-### 2. make_VOC_dataset : this  three  python  files  realized  the function of  convert the label  from the .xml  format  to the .txt  format, so that we can train the  YOLO with the .txt  format  label.
+## Part II: 
+2. Make_VOC_dataset : this  three  python  files  realized  the function of  convert the label  from the  ".xml"  format  to the  ".txt"  format, so that we can train the  YOLO with the .txt  format  label.
 
-- if we make it out, the COCO dataset in the data folder should  be the following hierarchy
+- If we make it out, the VOC dataset in the data folder should  be the following hierarchy.
 
-```            
+```
 ├── data
-│   ├── COCO         for  COCO dataset
+│   ├── VOC         For  VOC dataset  folder
 │   |     ├── images
 |   |     |        ├── train
 |   |     |        ├── val
@@ -63,5 +68,4 @@ Download the following address, download and unzip the folder to copy to the dat
 |   |     |        ├── val
 |
 ```
-
 

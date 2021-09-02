@@ -7,9 +7,9 @@
   
 ## This repository mainly include  three parts:
 
-- Part I:  make  an environment  for the  Darknet
+- Part I:    make an environment  for the  Darknet
 
-- Part II:  make_VOC_dataset
+- Part II:   make_VOC_dataset
 
 - Part III:  make_COCO_dataset and test on the  test2017. 
  
@@ -41,8 +41,9 @@
 
 
 
-## Part I:  make_COCO_dataset and evaluate on the  test2017 
+## Part III:  make_COCO_dataset and evaluate on the  test2017 
 3.1 make_COCO_dataset:  
+
 The first three  python  files realized the function of convert the label from the " .json"  format  to the ".txt"  format, so that we can train the  YOLO network  with the .txt  format  label.
 
 -If we make it out,  the COCO dataset in the data folder should  be the following hierarchy.
@@ -59,11 +60,11 @@ The first three  python  files realized the function of convert the label from t
 |
 ```
 
-3.2 If you want test your model  without the ground truth label, 
+3.2 If you want test your model without the ground truth label.
 
-and  submit the reuslts.json  to the CodaLab   https://competitions.codalab.org/competitions/20794 ,  
+And submit the reuslts.json to the CodaLab   https://competitions.codalab.org/competitions/20794 ,  
 
-here have a  simple tutorials: ./make_COCO_dataset/readme_test-dev2017.md 
+Here  we  have a simple tutorials: ./make_COCO_dataset/readme_test-dev2017.md 
 
 
 - For the  COCO  dataset and yolovv3-v4 pretrained weights:

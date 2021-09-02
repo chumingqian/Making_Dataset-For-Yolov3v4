@@ -9,7 +9,8 @@
 
 
      download the following   files:  
-     train2017.zip, val2017.zip,  annotations_trainval2017.zip,   test2017;  Then  unzip the above zip  files.
+     train2017.zip, val2017.zip,  annotations_trainval2017.zip,   test2017; 
+     Then  unzip the above zip  files.
    
      
    

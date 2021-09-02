@@ -1,12 +1,14 @@
-# Make_Dataset-for-Ultralytics-yolov3v4,  we make the dataset for  this repository  https://github.com/ultralytics/yolov3 and also support for yolov4.
+# Make_Dataset-for-Ultralytics-yolov3v4: 
+  we make the dataset for  this repository  https://github.com/ultralytics/yolov3 and also support for yolov4.
 
-## This repository mainly include  two parts:
+## This repository mainly include  three parts:
 - Part I:  make_COCO_dataset and test on the  test-dev2017 
 
 - Part II: make_VOC_dataset
 
+- Part II: make  an environment  for the  Darknet  version 
 
-## Part I: 
+## Part I:  make_COCO_dataset and test on the  test-dev2017 
 1.1 make_COCO_dataset:  
 This  three  python  files realized the function of convert the label from the " .json"  format  to the ".txt"  format, so that we can train the  YOLO network  with the .txt  format  label.
 
@@ -52,7 +54,7 @@ Download the following address, download and unzip the folder to copy to the dat
 
 
 
-## Part II: 
+## Part II: make_VOC_dataset
 2. Make_VOC_dataset : this  three  python  files  realized  the function of  convert the label  from the  ".xml"  format  to the  ".txt"  format, so that we can train the  YOLO with the .txt  format  label.
 
 - If we make it out, the VOC dataset in the data folder should  be the following hierarchy.
@@ -69,3 +71,6 @@ Download the following address, download and unzip the folder to copy to the dat
 |
 ```
 
+## Part III:  make  an environment  for the  Darknet  version 
+
+- Pelease read about  the ./Env_For_Darknet.md

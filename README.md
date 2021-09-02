@@ -6,7 +6,7 @@
 
 - Part II: make_VOC_dataset
 
-- Part II: make  an environment  for the  Darknet  version 
+- Part II: make  an environment  for the  Darknet 
 
 ## Part I:  make_COCO_dataset and test on the  test-dev2017 
 1.1 make_COCO_dataset:  
@@ -71,6 +71,6 @@ Download the following address, download and unzip the folder to copy to the dat
 |
 ```
 
-## Part III:  make  an environment  for the  Darknet  version 
+## Part III:  make  an environment  for the  Darknet   
 
 - Pelease read about  the ./Env_For_Darknet.md

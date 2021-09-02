@@ -1,9 +1,6 @@
 
 #  make COCO_dataset-for-Ultralytics-yolov3v4
 
-###     
-###    
-
 
 ### I. First, go to the  https://cocodataset.org/#download.
 

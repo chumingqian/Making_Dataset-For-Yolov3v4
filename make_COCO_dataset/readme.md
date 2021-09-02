@@ -33,9 +33,10 @@ Notice that,  it  will generate 11828  + 50001 .txt files (add two class.txt, th
 2-make-image_path.py: if we have the train_2017.txt,  val_2017.txt  and make the above  hierarchy folder correctly,  we generate the  train_coco2017.txt  and  vla_coco2017.txt.
 
 
-### Notice: if you want test you model ( ".cfg"  and " weights" file )  on the test-dev2017 which is a json file without ground truth and  submit  to  the  CodaLab.  
+### Notice: If you want test you model ( ".cfg"  and " weights" file )  on the test-dev2017 which is a json file without ground truth and  submit  to  the  CodaLab.  
+
         ./readme_test-dev2017.md
 
-Have a fun with the make dataset.
+
 
 Good  luck  for  you. 😊

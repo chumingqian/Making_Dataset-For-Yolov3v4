@@ -1,12 +1,19 @@
 
-#  make COCO_dataset-for-Ultralytics-yolov3v4
+###  The following steps  are  evaluate  the  darknet  format model  on  the  test2017.
+    (means that  the network file is ".cfg" and the  weight file is " .weights") 
+
+####  If you want evaluate the  Pytorch format model (means that  the network file is ".py" and the  weight file is " .pt or .pth")  on  the  test2017, try this https://github.com/open-mmlab/mmdetection
 
 
-### I. First, go to the  https://cocodataset.org/#download.
+###   https://cocodataset.org/#download.
 
 
      download the following   files:  
-     train2017.zip, val2017.zip,  annotations_trainval2017.zip,   test2017;  Then  unzip the above zip  files.
+     
+     test2017.zip,  image_info_test2017.zip,  
+     
+     Then  unzip the above zip  files.
+     test2017: This   file  contains   about 41K  images. 
    
      
    

@@ -1,9 +1,9 @@
 # Make_Dataset-for-Ultralytics-yolov3v4: 
-  we make the dataset for  ultralytics-version yolo (https://github.com/ultralytics/yolov3 ) 
+  We make the dataset for  ultralytics-version yolo (https://github.com/ultralytics/yolov3 ) 
   
-  and the origianl  darknet-version yolo    (https://github.com/AlexeyAB/darknet ), 
+  And the origianl  darknet-version yolo    (https://github.com/AlexeyAB/darknet ), 
   
-  both support for yolov3 and yolov4.
+  Both support for yolov3 and yolov4.
   
 ## This repository mainly include  three parts:
 

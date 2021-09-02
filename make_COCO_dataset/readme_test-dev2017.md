@@ -1,26 +1,21 @@
 
-###  The following steps  are  evaluate  the  darknet  format model  on  the  test2017.
-    (means that  the network file is ".cfg" and the  weight file is " .weights") 
+## The following steps  are  evaluate  the  darknet  format model  on  the  test2017.
+ (means that  the network file is ".cfg" and the  weight file is " .weights") 
 
-####  If you want evaluate the  Pytorch format model (means that  the network file is ".py" and the  weight file is " .pt or .pth")  on  the  test2017, try this https://github.com/open-mmlab/mmdetection
-
-
-###   https://cocodataset.org/#download.
+- If you want evaluate the  Pytorch format model (means that  the network file is ".py" and the  weight file is " .pt or .pth")  on  the  test2017, try this https://github.com/open-mmlab/mmdetection
 
 
-     download the following   files:  
-     
-     test2017.zip,  image_info_test2017.zip,  
-     
-     Then  unzip the above zip  files.
-     test2017: This   file  contains   about 41K  images. 
+### I. Obtain the test images. 
+   Go to  https://cocodataset.org/#download,  download the following  files and then unzip these two  zip  files:  
+   test2017.zip,  image_info_test2017.zip.  
+    
+   test2017: This  file  contains  about 41K  images. 
    
      
    
-### II.  Secondly, after we upzip above files, we will see the ./instance_val2017.json under the annotations_trainval2017 folder.
+### II. Introduce the image_info_test2017.
  
-0_coco2voc.py: this  file will  convert the labels of all images ( train images:11827 test file :5000)  from  .json  format to  .txt  format  and save the .txt file under ./labels.
-    Notice that,  it  will generate 11828  + 50001 .txt files (add two class.txt, they are the class name of COCO dataset) under the train/val  folder, separately.
+
              
  
 ### III. Next, we make the following hierarchy  of the folder. 

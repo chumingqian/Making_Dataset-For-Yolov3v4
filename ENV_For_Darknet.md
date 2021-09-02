@@ -15,7 +15,7 @@ My environment was  Ubuntu 16.04;  Geforce 1080Ti(12G),  the  drivers  for  Nvid
                   sudo update-alternatives --config gcc
                   sudo update-alternatives --config g++
 
-1.3 Download the opencv  version  you  want  install,  mine  is opencv3.4.15 ;
+1.3 Download the opencv  version (and opecv-contrib if you need)  you  want  install,  mine  is opencv3.4.15  and opencv_contrib-3.4.0 ;
    
 
 

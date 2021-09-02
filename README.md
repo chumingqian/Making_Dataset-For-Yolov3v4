@@ -1,6 +1,9 @@
 # Make_Dataset-for-Ultralytics-yolov3v4: 
   we make the dataset for  ultralytics-version yolo (https://github.com/ultralytics/yolov3 ) 
-  and the origianl  darknet-version yolo    (https://github.com/AlexeyAB/darknet ), both support for yolov3 and yolov4.
+  
+  and the origianl  darknet-version yolo    (https://github.com/AlexeyAB/darknet ), 
+  
+  both support for yolov3 and yolov4.
   
 ## This repository mainly include  three parts:
 - Part I:  make_COCO_dataset and test on the  test-dev2017 
@@ -27,7 +30,7 @@ This  three  python  files realized the function of convert the label from the "
 |
 ```
 
-1.2 If you want test your model  without the ground truth label, and  submit the reuslts.json   (which test about 21k images)  to the CodaLab   https://competitions.codalab.org/competitions/20794 ,  here have a  simple tutorials: ./make_COCO_dataset/readme_test-dev2017.md 
+1.2 If you want test your model  without the ground truth label, and  submit the reuslts.json  to the CodaLab   https://competitions.codalab.org/competitions/20794 ,  here have a  simple tutorials: ./make_COCO_dataset/readme_test-dev2017.md 
 
 
 

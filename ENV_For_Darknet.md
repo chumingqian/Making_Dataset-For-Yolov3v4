@@ -78,8 +78,8 @@ My environment was  Ubuntu 16.04;  Geforce 1080Ti(12G),  the  drivers  for  Nvid
                       sudo gedit /etc/bash.bashrc
                       
                       add the this  content：
-                        PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig
-                        export PKG_CONFIG_PATH
+                            PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig
+                            export PKG_CONFIG_PATH
 
                       source /etc/bash.bashrc
 
@@ -92,12 +92,12 @@ My environment was  Ubuntu 16.04;  Geforce 1080Ti(12G),  the  drivers  for  Nvid
 
 3.1  Clone  AlexAB's repository: " git clone https://github.com/AlexeyAB/darknet.git ",   and  "cd ./darknet".
 
-3.2  Change  the  makefile  to  have  GPU  and OPENCV  enabled. 
+3.2  Change the  makefile  to  have  GPU  and OPENCV  enabled. 
 
                     sed -i 's/OPENCV=0/OPENCV=1/' Makefile
                     sed -i 's/GPU=0/GPU=1/' Makefile
                     sed -i 's/CUDNN=0/CUDNN=1/' Makefile
-                    sed -i 's/CUDNN_HALF=0/CUDNN_HALF=1/' Makefil
+                    sed -i 's/CUDNN_HALF=0/CUDNN_HALF=1/' Makefile
                     
                     
                     
@@ -105,13 +105,13 @@ My environment was  Ubuntu 16.04;  Geforce 1080Ti(12G),  the  drivers  for  Nvid
      "make "                 
 
  3.4 Now, if we want check the darknet installation we may download pre-trained  YOLOV4  weights:
-           
-           wget https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v3_optimal/yolov4.weights
   
-            ```bash
-            ./darknet detector test <path to .data file> <path to config> <path to weights> <path to image>
-            ```
-            
+```bash
+./darknet detector test <path to .data file> <path to config> <path to weights> <path to image>
+```
+             
+             wget https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v3_optimal/yolov4.weights
+          
             ./darknet detector test cfg/coco.data cfg/yolov4.cfg yolov4.weights data/dog.jpg
             
             

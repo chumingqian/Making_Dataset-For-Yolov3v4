@@ -21,7 +21,7 @@
 
 -2.3  There  is one  thing  we need  to  clear. 
 
-- When we talk  about  evaluate on  the  test2017:   it means that  we test on 41k  images.
+- When we talk  about  evaluate on  the  test2017:    it means that  we test on 41k  images.
       
 - When we talk  about  evaluate on  the  test-dev2017:  it  means that  we test on 21k  images.
       
@@ -43,9 +43,15 @@ make sure there  is  result folder  nearby the exectuable  ./darknet.
 - ./darknet detector valid cocotest.data  cfg/vars55M_yolov4.cfg    55Mmap45.weights; 
 - cocotest.data: --> valid -->  change the  test.txt, the test.txt will include all the image's path we may want test.   to  suit  your  test image's  path. 
 
--  result/coco_result.json:  默认的json 文件名 是 coco_results.json;: include the test sample image's  path.
+-  result/coco_result.json:  the name of  generated  .json  file  will be "coco_results.json".
 
  
+### IV. Obtain  the  21k  images'  id  number . 
+ 
+The exactly  name of  20288 image's  are  saved  in  the  ./test_dev21k.txt. If you  ask where is code through  test-dev2017.json  file to obtain images' id number and   generate  this test_dev21k.txt file.   I may tell you  [here](https://raw.githubusercontent.com/AlexeyAB/darknet/master/scripts/testdev2017.txt)
+
+-Tips:  on the ubuntu 18.04  or above system,  we can open  this  test.txt  file,   use the  "find  and replace " to change the  testing images' actual  path to your  suitation. 
+
  
  
 ### IV. At last, we use the  train_2017.txt , val_2017.txt to generate the  absolute path of images  for training and val.      

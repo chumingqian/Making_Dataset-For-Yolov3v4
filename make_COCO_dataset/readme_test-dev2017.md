@@ -6,15 +6,24 @@
 
 
 ### I. Obtain the test images. 
-   Go to  https://cocodataset.org/#download,  download the following  files and then unzip these two  zip  files:  
-   test2017.zip,  image_info_test2017.zip.  
+   Go to  https://cocodataset.org/#download,  download the following files and then unzip these two  zip  files:  
+   
+   test2017.zip (about 6G ),  image_info_test2017.zip (1M).  
     
    test2017: This  file  contains  about 41K  images. 
    
      
    
 ### II. Introduce the image_info_test2017.
- 
+ -2.1 image_info_test2017/annotations/image_info_test2017: This  .json  file  contains about  41k images' information, such  as image's id_number, image's height and width, but NOT include object's  ground truth (like object's x,y, height, width) label.  
+    
+-2.2  image_info_test2017/annotations/image_info_test-dev2017:  This  .json  file  contains about  21k images' information,  we can regard test-dev2017 as the subset  of test2017, it  also NOT include object's  ground truth  label.
+
+-2.3  There  is one  thing  we need  to  clear.  
+- When we talk  about  evaluate on  the  test2017:  it means that  we test on 41k  images.
+      
+- When we talk  about  evaluate on  the  test-dev2017:  it  means that  we test on 21k  images.
+      
 
              
  

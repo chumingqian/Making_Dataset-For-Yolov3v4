@@ -16,7 +16,8 @@
 ### II.  Secondly, after we upzip above files, we will see the ./instance_val2017.json under the annotations_trainval2017 folder.
  
 0_coco2voc.py: this  file will  convert the labels of all images ( train images:11827 test file :5000)  from  .json  format to  .txt  format  and save the .txt file under ./labels.
-    Notice that,  it  will generate 11828  + 50001 .txt files (add two class.txt, they are the class name of COCO dataset) under the train/val  folder, separately.
+
+Notice that,  it  will generate 11828  + 50001 .txt files (add two class.txt, they are the class name of COCO dataset) under the train/val  folder, separately.
              
  
 ### III. Next, we make the following hierarchy  of the folder. 
@@ -31,5 +32,10 @@
 ### IV. At last, we use the  train_2017.txt , val_2017.txt to generate the  absolute path of images  for training and val.      
 2-make-image_path.py: if we have the train_2017.txt,  val_2017.txt  and make the above  hierarchy folder correctly,  we generate the  train_coco2017.txt  and  vla_coco2017.txt.
 
+
+### Notice: if you want test you model ( ".cfg"  and " weights" file )  on the test-dev2017 which is a json file without ground truth and  submit  to  the  CodaLab.  
+        ./readme_test-dev2017.md
+
 Have a fun with the make dataset.
-Good  luck  for  you.
+
+Good  luck  for  you. 😊

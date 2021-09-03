@@ -48,14 +48,15 @@ make sure there  is  result folder  nearby the exectuable  ./darknet.
  
 ### IV. Obtain  the  21k  images'  id  number . 
  
+4.1 Obtain  the  21k  images'  id  number:
 The exactly  name of  20288 image's  are  saved  in  the  ./test_dev21k.txt. If you  ask where is code through  test-dev2017.json  file to obtain images' id number and   generate  this test_dev21k.txt file.   I may tell you  [here](https://raw.githubusercontent.com/AlexeyAB/darknet/master/scripts/testdev2017.txt)
 
 -Tips:  on the ubuntu 18.04  or above system,  we can open  this  test.txt  file,   use the  "find  and replace " to change the  testing images' actual  path to your  suitation. 
 
- 
- 
-### IV. At last, we use the  train_2017.txt , val_2017.txt to generate the  absolute path of images  for training and val.      
-2-make-image_path.py: if we have the train_2017.txt,  val_2017.txt  and make the above  hierarchy folder correctly,  we generate the  train_coco2017.txt  and  vla_coco2017.txt.
+4.2 Copy  21k  images  to  a  new  folder:
+use the  ./4_select_test21k.py   to select  21k images  from  the  test2017(41k images)   and  copy them  to  a new  folder.
 
-Have a fun with the make dataset.
+ 
+ 
+
 Good  luck  for  you.

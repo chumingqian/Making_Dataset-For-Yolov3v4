@@ -18,7 +18,7 @@
  
 0_coco2voc.py: this  file will  convert the labels of all images ( train images:11827  val file :5000)  from  .json  format to  .txt  format  and save the .txt file under ./labels.
 
-Notice that,  it  will generate 11828  + 50001 .txt files (add two class.txt, they are the class name of COCO dataset) under the train/val  folder, separately.
+Notice that,  it  will generate 118288  + 50001 .txt files (add two class.txt, they are the class name of COCO dataset) under the train/val  folder, separately.
              
  
 ### III. Next, we make the following hierarchy  of the folder. 

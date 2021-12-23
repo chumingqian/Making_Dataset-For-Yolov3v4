@@ -16,7 +16,7 @@
    
 ### II.  Secondly, after we upzip above files, we will see the ./instance_val2017.json under the annotations_trainval2017 folder.
  
-0_coco2voc.py: this  file will  convert the labels of all images ( train images:11827  val file :5000)  from  .json  format to  .txt  format  and save the .txt file under ./labels.
+0_coco2voc.py: this  file will  convert the labels of all images ( train images:118287  val file :5000)  from  .json  format to  .txt  format  and save the .txt file under ./labels.
 
 Notice that,  it  will generate 118288  + 50001 .txt files (add two class.txt, they are the class name of COCO dataset) under the train/val  folder, separately.
              
